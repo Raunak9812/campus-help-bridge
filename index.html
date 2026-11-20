@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f7f7fb" />
+  <meta name="description" content="Campus Help Bridge is a student-led marketplace to discover, share and exchange affordable textbooks, notes, PYQs and study resources across universities." />
+  <meta name="author" content="Raunak Yadav" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://kaleidoscopic-biscotti-8cff41.netlify.app/" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+  <link rel="apple-touch-icon" href="/favicon-96.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Campus Help Bridge" />
+  <meta property="og:title" content="Campus Help Bridge | Student Resource Marketplace" />
+  <meta property="og:description" content="Discover, share and exchange affordable textbooks, notes, PYQs and study resources across universities." />
+  <meta property="og:url" content="https://kaleidoscopic-biscotti-8cff41.netlify.app/" />
+  <meta name="twitter:card" content="summary" />
+  <title>Campus Help Bridge | Student Resource Marketplace</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://kaleidoscopic-biscotti-8cff41.netlify.app/#website",
+        "url": "https://kaleidoscopic-biscotti-8cff41.netlify.app/",
+        "name": "Campus Help Bridge",
+        "alternateName": ["Campus Help", "CHB"],
+        "description": "A student-led marketplace for sharing textbooks, notes, previous-year questions and other study resources.",
+        "creator": { "@id": "https://kaleidoscopic-biscotti-8cff41.netlify.app/#creator" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://kaleidoscopic-biscotti-8cff41.netlify.app/#creator",
+        "name": "Raunak Yadav"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://kaleidoscopic-biscotti-8cff41.netlify.app/#organization",
+        "name": "Campus Help Bridge",
+        "url": "https://kaleidoscopic-biscotti-8cff41.netlify.app/",
+        "founder": { "@id": "https://kaleidoscopic-biscotti-8cff41.netlify.app/#creator" }
+      }
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Your campus has more to share. Discover affordable study resources from fellow students. <a href="#" data-action="open-request">Request a material <span>↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#" data-view="home" aria-label="Campus Help Bridge home">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 13.5c0-2 1.6-3.5 3.6-3.5h9.1c2.1 0 3.9 1.1 5.3 2.9C27.4 11.1 29.2 10 31.3 10h2.9c2 0 3.6 1.6 3.6 3.5v23c0 1.2-1 2.2-2.2 2.2h-4.3c-2.5 0-4.8 1-6.5 2.8a1.2 1.2 0 0 1-1.8 0 8.9 8.9 0 0 0-6.5-2.8h-4.3A2.2 2.2 0 0 1 10 36.5v-23Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M24.7 13v25M14 18h6M14 23h6M30 18h3M30 23h3" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="m33.5 5 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z" fill="#FFD16A"/></svg>
+      </span>
+      <span class="brand-copy"><strong>campus<span>help</span></strong><small>BRIDGE YOUR KNOWLEDGE</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-link active" data-view="home">Discover</button>
+      <button class="nav-link" data-view="books">Books</button>
+      <button class="nav-link" data-view="notes">Notes & PYQs</button>
+      <button class="nav-link" data-view="requests">Requests</button>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button notification-button" aria-label="Notifications" data-view="dashboard"><span class="icon">♧</span><i class="notification-dot"></i></button>
+      <button class="icon-button" aria-label="Messages" data-view="messages"><span class="icon">✉</span><i class="message-dot"></i></button>
+      <button class="avatar-button" id="profile-menu-button" aria-label="Open profile menu"><span class="avatar avatar-purple">RY</span><span class="profile-chevron">⌄</span></button>
+      <div class="profile-menu hidden" id="profile-menu">
+        <div class="profile-menu-head"><strong id="menu-user-name">Campus Guest</strong><small>BROWSE MODE · SIGN IN TO PARTICIPATE</small></div>
+        <button data-view="dashboard">My dashboard</button>
+        <button data-view="wishlist">My wishlist</button>
+        <button data-view="messages">Messages <span class="menu-count">2</span></button>
+        <div class="menu-divider"></div>
+        <span class="menu-label">Switch demo profile</span>
+        <button class="switch-user" data-user="raunak">Raunak · CU CSE</button>
+        <button class="switch-user" data-user="aanya">Aanya · CU CSE</button>
+        <button class="switch-user" data-user="kabir">Kabir · CU Mechanical</button>
+        <button class="switch-user" data-user="meera">Meera · UIET ECE</button>
+        <div class="menu-divider"></div>
+        <button data-action="open-login">Log in / Create account</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="app-shell">
+    <section id="home-page" class="page active">
+      <section class="hero">
+        <div class="hero-spark spark-one">✦</div><div class="hero-spark spark-two">✳</div><div class="hero-spark spark-three">✦</div>
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-icon">✦</span> THE STUDENT-POWERED MARKETPLACE <span class="eyebrow-live" id="mode-badge">LIVE COMMUNITY</span></div>
+          <h1>Good finds.<br><em>Better grades.</em><br>Stronger campus.</h1>
+          <p class="hero-description">Pass on what you know. Find what you need. A smarter way to share books, notes and the little things that make student life easier.</p>
+          <div class="hero-actions"><button class="button button-primary" data-action="scroll-market">Explore materials <span>↗</span></button><button class="button button-glass" data-action="open-sell"><span class="plus-icon">＋</span> Share a resource</button></div>
+          <div class="hero-social-proof"><div class="avatar-stack"><span class="avatar avatar-peach">AS</span><span class="avatar avatar-green">KS</span><span class="avatar avatar-blue">MP</span><span class="avatar avatar-yellow">+</span></div><div><strong>Made by students, for students</strong><small>One helpful share can go a long way.</small></div></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of books and study resources">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="floating-note note-top"><span class="note-icon">✎</span><span><b>Handwritten notes</b><small>Shared with care</small></span><span class="note-check">✓</span></div>
+          <div class="floating-note note-bottom"><span class="note-icon note-icon-green">↗</span><span><b>₹0 – 199</b><small>Student-friendly finds</small></span></div>
+          <div class="book-stack">
+            <div class="book book-back"><span>PHYSICS</span><i>01</i></div>
+            <div class="book book-mid"><span>PROGRAMMING<br>IN C</span><i>02</i><b>CODE<br>YOUR<br>FUTURE</b></div>
+            <div class="book book-front"><span>ENGINEERING<br>MATHEMATICS</span><i>03</i><b>MAKE<br>IT<br>COUNT.</b><small>STUDENT EDITION</small></div>
+            <div class="book-leaf leaf-one">✦</div><div class="book-leaf leaf-two">✳</div>
+          </div>
+          <div class="art-caption"><span class="caption-check">✓</span> Your next useful find is closer than you think</div>
+        </div>
+        <div class="hero-bottom-wave"></div>
+      </section>
+
+      <section class="search-panel" id="market-search">
+        <div class="search-intro"><span class="search-icon-round">⌕</span><div><strong>What are you looking for?</strong><small>Search across your student community</small></div></div>
+        <div class="search-input-wrap"><span>⌕</span><input id="search-input" type="search" placeholder="Try ‘Engineering Mathematics’, C programming notes..." autocomplete="off"><button id="clear-search" class="clear-search hidden" aria-label="Clear search">×</button></div>
+        <button class="button button-dark" id="search-button">Search <span>→</span></button>
+      </section>
+
+      <section class="stats-strip">
+        <div><span class="stat-icon stat-violet">▤</span><span><strong>50+</strong><small>demo resources to explore</small></span></div>
+        <div><span class="stat-icon stat-coral">♡</span><span><strong>Free & fair</strong><small>student-first pricing</small></span></div>
+        <div><span class="stat-icon stat-mint">✓</span><span><strong>Verified profiles</strong><small>trust built in</small></span></div>
+        <div><span class="stat-icon stat-yellow">↗</span><span><strong>One campus</strong><small>many possibilities</small></span></div>
+      </section>
+
+      <section class="section-block category-section">
+        <div class="section-heading"><div><span class="section-kicker">FIND YOUR NEXT FIND</span><h2>Explore by category</h2></div><button class="text-link" data-view="explore">View all materials <span>→</span></button></div>
+        <div class="category-grid">
+          <button class="category-card cat-books" data-category="Books"><span class="category-art"><span class="mini-book mini-book-a"></span><span class="mini-book mini-book-b"></span><span class="mini-book mini-book-c"></span></span><span><strong>Textbooks</strong><small>Pre-loved, ready to learn</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card cat-notes" data-category="Handwritten Notes"><span class="category-art notes-art"><span class="paper-lines"></span><span class="pencil-shape"></span></span><span><strong>Handwritten notes</strong><small>Notes that make sense</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card cat-pyq" data-category="PYQs"><span class="category-art pyq-art"><span class="file-shape"><i>PDF</i><b>•••</b><b>••••</b></span><span class="spark-badge">✦</span></span><span><strong>PYQs & papers</strong><small>Practice with purpose</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card cat-lab" data-category="Lab Manuals"><span class="category-art lab-art"><span class="flask">⚗</span><span class="lab-dot">+</span></span><span><strong>Lab & practicals</strong><small>Ready for the record</small></span><span class="category-arrow">↗</span></button>
+          <button class="category-card cat-guides" data-category="Study Guides"><span class="category-art guide-art"><span class="guide-star">✦</span><span class="guide-card">A+</span></span><span><strong>Guides & summaries</strong><small>Big topics, made simple</small></span><span class="category-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="section-block marketplace-section" id="marketplace">
+        <div class="section-heading market-heading"><div><span class="section-kicker">GOOD STUFF, GOOD PEOPLE</span><h2 id="listing-heading">Fresh on campus <span class="heading-spark">✦</span></h2><p>Useful resources recently shared by students like you.</p></div><button class="button button-outline" data-action="open-sell">＋ List a resource</button></div>
+        <div class="filter-bar">
+          <div class="filter-tabs"><button class="filter-tab active" data-quick-filter="all">For you</button><button class="filter-tab" data-quick-filter="free">Free finds</button><button class="filter-tab" data-quick-filter="books">Books</button><button class="filter-tab" data-quick-filter="notes">Notes & PYQs</button></div>
+          <div class="filter-controls"><select id="college-filter" aria-label="Filter by university"><option value="">All universities</option></select><input id="other-university-filter" class="filter-other-input hidden" type="search" placeholder="Enter university" aria-label="Enter university name"><select id="semester-filter" aria-label="Filter by semester"><option value="">All semesters</option><option value="1">Semester 1</option><option value="2">Semester 2</option><option value="3">Semester 3</option><option value="4">Semester 4</option><option value="5">Semester 5</option><option value="6">Semester 6</option><option value="7">Semester 7</option><option value="8">Semester 8</option></select><select id="subject-filter" aria-label="Filter by subject"><option value="">All subjects</option></select><input id="other-subject-filter" class="filter-other-input hidden" type="search" placeholder="Enter subject" aria-label="Enter subject name"><select id="sort-filter" aria-label="Sort listings"><option value="recent">Recently added</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+        </div>
+        <div class="active-filter-line"><span id="result-count">Loading live resources…</span><span id="filter-summary">Across student communities</span><button id="reset-filters" class="reset-filter">Clear filters ×</button></div>
+        <div class="listing-grid" id="listing-grid"></div>
+        <div class="load-more-wrap"><button class="button button-load" id="load-more">Show more resources <span>↓</span></button></div>
+      </section>
+
+      <section class="feature-banner section-block">
+        <div class="feature-banner-art"><div class="banner-circle"></div><div class="banner-books"><span></span><span></span><span></span></div><div class="banner-paper">✦</div></div>
+        <div class="feature-banner-copy"><span class="section-kicker">CAN'T FIND IT?</span><h2>Your next chapter<br>starts with a request.</h2><p>Tell the community what you need. A student might have exactly what you're looking for.</p><button class="button button-dark" data-action="open-request">Request a material <span>↗</span></button></div>
+        <div class="banner-decoration">ASK<br>SHARE<br>GROW</div>
+      </section>
+
+      <section class="section-block community-section">
+        <div class="section-heading"><div><span class="section-kicker">A LITTLE HELP GOES A LONG WAY</span><h2>How Campus Help works</h2></div></div>
+        <div class="steps-grid"><div class="step-card"><span class="step-number">01</span><div class="step-illustration step-search">⌕</div><h3>Find what you need</h3><p>Search books, notes and useful resources by subject, semester or college.</p></div><div class="step-card"><span class="step-number">02</span><div class="step-illustration step-connect">↔</div><h3>Connect with students</h3><p>Check verified profiles, ask questions and chat without exposing private details.</p></div><div class="step-card"><span class="step-number">03</span><div class="step-illustration step-share">✦</div><h3>Share & pass it on</h3><p>List extra material for free or at a fair price. Keep good resources in circulation.</p></div></div>
+      </section>
+      <footer class="site-footer"><div class="footer-brand"><span class="brand-mark small-mark">✦</span><div><strong>campus<span>help</span></strong><small>CONNECT • SHARE • SAVE • HELP</small></div></div><p>Knowledge shouldn't expire with graduation.</p><div class="footer-links"><a href="#" data-view="home">Discover</a><a href="#" data-view="requests">Requests</a><a href="#" data-action="open-sell">Share a resource</a><a href="/about.html">About / creator</a></div><small class="footer-copy">© 2026 Campus Help Bridge · Designed &amp; developed by Raunak Yadav</small></footer>
+    </section>
+
+    <section id="other-page" class="page"><div class="subpage-header"><button class="back-link" data-view="home">← Back to discover</button><span class="section-kicker" id="subpage-kicker">YOUR CAMPUS, YOUR COMMUNITY</span><h1 id="subpage-title">Explore materials</h1><p id="subpage-description">Find something useful, shared by someone nearby.</p></div><div id="subpage-content"></div></section>
+  </main>
+
+  <div class="bottom-nav"><button class="bottom-link active" data-view="home"><span>⌂</span>Home</button><button class="bottom-link" data-view="books"><span>▤</span>Books</button><button class="bottom-link" data-action="open-sell"><span class="bottom-plus">＋</span>Share</button><button class="bottom-link" data-view="messages"><span>✉</span>Inbox</button><button class="bottom-link" data-view="dashboard"><span>☻</span>Profile</button></div>
+
+  <div id="modal-root"></div>
+  <div id="toast-region" class="toast-region" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="supabase-backend.js"></script>
+  <script src="app.js"></script>
+  <script src="app-enhancements.js"></script>
+</body>
+</html>

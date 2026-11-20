@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kaleidoscopic-biscotti-8cff41.netlify.app/sitemap.xml
